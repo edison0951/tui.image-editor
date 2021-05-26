@@ -1,8 +1,8 @@
 import { extend, forEach, map } from 'tui-code-snippet';
-import style from '@/ui/template/style';
-import standardTheme from '@/ui/theme/standard';
-import icon from '@svg/default.svg';
-import { styleLoad } from '@/util';
+import style from '@/lib/tui-image-editor/src/js/ui/template/style';
+import standardTheme from '@/lib/tui-image-editor/src/js/ui/theme/standard';
+import icon from '@/lib/tui-image-editor/src/svg/default.svg';
+import { styleLoad } from '@/lib/tui-image-editor/src/js/util';
 
 /**
  * Theme manager

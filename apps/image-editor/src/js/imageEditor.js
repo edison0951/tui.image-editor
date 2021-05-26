@@ -173,8 +173,6 @@ class ImageEditor {
 
     this.mode = null;
 
-    this.activeObjectId = null;
-
     /**
      * UI instance
      * @type {Ui}
@@ -841,11 +839,19 @@ class ImageEditor {
   }
 
   /**
-   * Set the cropping rect
+   * Set the cropping rect ratio
    * @param {number} [mode] crop rect mode [1, 1.5, 1.3333333333333333, 1.25, 1.7777777777777777]
    */
-  setCropzoneRect(mode) {
-    this._graphics.setCropzoneRect(mode);
+  setCropzoneRatio(mode) {
+    this._graphics.setCropzoneRatio(mode);
+  }
+
+  /**
+   * Set the cropping rect
+   * @param {Object} [rect]  {{left: number, top: number, width: number, height: number}} rect
+   */
+  setCropzoneRect(rect) {
+    this._graphics.setCropzoneRect(rect);
   }
 
   /**
